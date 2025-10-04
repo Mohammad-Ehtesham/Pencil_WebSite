@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
+import InteractiveBackground from "../components/ui/InteractiveBackground";
 
 const Home = () => {
   return (
-    <div>
+    <div className="relative">
+      <InteractiveBackground />
+
       {/* Hero Section */}
-      <section className="hero min-h-screen bg-gradient-to-br from-primary/10 to-base-100">
+      <section className="hero min-h-screen bg-gradient-to-br from-primary/10 to-base-100 relative z-10">
         <div className="hero-content text-center">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold">
