@@ -57,7 +57,7 @@ const Footer = () => {
       <aside>
         <p>
           Copyright © {new Date().getFullYear()} - All rights reserved by
-          EduInnovate Ltd.
+          MPencil Ltd.
         </p>
       </aside>
     </footer>

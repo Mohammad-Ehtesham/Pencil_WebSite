@@ -6,8 +6,8 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Blog from "./pages/Blog";
-import Testimonials from "./pages/Testimonials";
+// import Blog from "./pages/Blog";
+// import Testimonials from "./pages/Testimonials";
 import Careers from "./pages/Careers";
 import Subscription from "./pages/Subscription";
 import "./index.css";
@@ -24,8 +24,8 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/testimonials" element={<Testimonials />} />
+              {/* <Route path="/blog" element={<Blog />} /> */}
+              {/* <Route path="/testimonials" element={<Testimonials />} /> */}
               <Route path="/careers" element={<Careers />} />
               <Route path="/subscription" element={<Subscription />} />
             </Routes>

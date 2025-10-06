@@ -34,7 +34,7 @@ const Home = () => {
       <section className="py-20 bg-base-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Why Choose EduInnovate?</h2>
+            <h2 className="text-4xl font-bold mb-4">Why Choose MPencil ERP?</h2>
             <p className="text-xl opacity-70 max-w-2xl mx-auto">
               We provide comprehensive solutions that address the unique
               challenges facing modern educational institutions.

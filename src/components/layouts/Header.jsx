@@ -10,8 +10,8 @@ const Header = () => {
     { path: "/", label: "Home" },
     { path: "/services", label: "Services" },
     { path: "/about", label: "About" },
-    { path: "/blog", label: "Resources" },
-    { path: "/testimonials", label: "Testimonials" },
+    // { path: "/blog", label: "Resources" },
+    // { path: "/testimonials", label: "Testimonials" },
     { path: "/contact", label: "Contact" },
     { path: "/subscription", label: "Pricing" },
   ];
@@ -63,7 +63,8 @@ const Header = () => {
             )}
           </div>
           <Link to="/" className="btn btn-ghost text-xl font-bold text-primary">
-            EduInnovate
+        <img src="/pencil-logo.gif" alt="MPencil Logo" className="h-8 w-8 mr-2 inline-block align-middle" />
+        <span className="align-middle">MPencil</span>
           </Link>
         </div>
 
@@ -92,7 +93,7 @@ const Header = () => {
               to="/subscription"
               className="btn btn-primary btn-sm sm:btn-md"
             >
-              Get Started
+              Book a Demo
             </Link>
             <ThemeSwitcher />
           </div>

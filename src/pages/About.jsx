@@ -1,14 +1,14 @@
 const About = () => {
   const team = [
     {
-      name: "Dr. Sarah Chen",
+      name: "Mayank Gupta",
       role: "CEO & Founder",
       bio: "Former university dean with 15+ years in educational leadership.",
-      image: "👩‍💼",
+      image: "👨‍💻",
     },
     {
-      name: "Michael Rodriguez",
-      role: "CTO",
+      name: "John Doe",
+      role: "COO",
       bio: "EdTech expert with background in scalable learning platforms.",
       image: "👨‍💻",
     },
@@ -19,7 +19,7 @@ const About = () => {
       image: "👩‍🏫",
     },
     {
-      name: "James Kim",
+      name: "Aman Verma",
       role: "Partnership Director",
       bio: "Former school district administrator with extensive network.",
       image: "🤝",
@@ -39,11 +39,11 @@ const About = () => {
       {/* Hero Section */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          About EduInnovate
+          About MPencil
         </h1>
         <p className="text-xl opacity-70 max-w-3xl mx-auto">
-          We're on a mission to revolutionize education through innovative
-          technology, expert guidance, and meaningful partnerships.
+          MPencil’s mission is to simplify school management with intuitive technology that 
+          empowers educators and focuses on student growth.
         </p>
       </div>
 
@@ -54,22 +54,18 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6">Our Story</h2>
             <div className="space-y-4 opacity-80">
               <p>
-                Founded in 2020 by Dr. Sarah Chen, EduInnovate emerged from a
-                simple observation: educational institutions were struggling to
-                keep pace with technological change while maintaining their core
-                mission of student development.
+                Founded in 2025 by Mayank Gupta, MPencil is a modern, 
+                all-in-one ERP designed to help schools embrace technology without losing focus on student growth. 
+                By automating tedious tasks and simplifying operations. From admissions and attendance to communication and 
+                finance. MPencil empowers every institution to work smarter, stay organized, and focus on what truly matters.
               </p>
               <p>
-                What started as a consulting service for local schools has grown
-                into a comprehensive platform serving educational organizations
-                worldwide. We've helped hundreds of institutions navigate
-                digital transformation while preserving the human element that
-                makes education meaningful.
+                What began as a small initiative to support Indian schools has grown into MPencil, a complete ERP platform transforming how schools operate and students learn. 
+                We help schools save time, reduce manual work, and improve communication with parents, while keeping the human touch at the heart of education.
               </p>
               <p>
-                Today, we continue to innovate, driven by our belief that every
-                student deserves access to engaging, effective, and future-ready
-                education.
+                Driven by our belief that every student deserves access to effective, engaging, and future-ready learning, 
+                we continue to innovate and make school management smarter, simpler, and more impactful.
               </p>
             </div>
           </div>
@@ -79,16 +75,18 @@ const About = () => {
               <div>
                 <h4 className="font-semibold text-lg mb-2">Mission</h4>
                 <p className="opacity-70">
-                  To empower educational institutions with innovative tools and
-                  strategies that enhance learning outcomes and prepare students
-                  for the future.
+                  To provide schools with an easy-to-learn, 
+                  interactive ERP that covers every detail of school management, 
+                  helping educators save time, stay organized, 
+                  and focus on what matters most
                 </p>
               </div>
               <div>
                 <h4 className="font-semibold text-lg mb-2">Vision</h4>
                 <p className="opacity-70">
-                  A world where every educational institution has the resources
-                  and support to provide transformative learning experiences.
+                  To redefine school management by making digital tools intuitive, 
+                  comprehensive, and accessible, so every school big or small can 
+                  run smoothly and every student can thrive.
                 </p>
               </div>
             </div>
@@ -97,7 +95,7 @@ const About = () => {
       </section>
 
       {/* Timeline */}
-      <section className="mb-20">
+      {/* <section className="mb-20">
         <h2 className="text-3xl font-bold text-center mb-12">Our Journey</h2>
         <div className="max-w-4xl mx-auto">
           {milestones.map((milestone, index) => (
@@ -111,7 +109,7 @@ const About = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Team Section */}
       <section>

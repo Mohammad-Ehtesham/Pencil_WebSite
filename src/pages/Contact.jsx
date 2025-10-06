@@ -116,7 +116,6 @@ const Contact = () => {
                   <option value="">Select an option</option>
                   <option value="general">General Information</option>
                   <option value="demo">Request a Demo</option>
-                  <option value="partnership">Partnership</option>
                   <option value="support">Technical Support</option>
                   <option value="other">Other</option>
                 </select>
@@ -156,7 +155,7 @@ const Contact = () => {
             <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
             <p className="opacity-70 mb-6">
               We're here to help educational institutions transform their
-              learning environments. Reach out to us with any questions or to
+              learning environments that too at an Affordable price. Reach out to us with any questions or to
               schedule a demo.
             </p>
           </div>
@@ -187,9 +186,9 @@ const Contact = () => {
               <div>
                 <h3 className="font-semibold">Address</h3>
                 <p className="opacity-70">
-                  123 Education Street
+                  209, Swapnapurti, Sasane Nagar
                   <br />
-                  San Francisco, CA 94102
+                  Hadapsar, Pune, Maharashtra - 411028
                 </p>
               </div>
             </div>
@@ -212,7 +211,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Phone</h3>
-                <p className="opacity-70">+1 (555) 123-4567</p>
+                <p className="opacity-70">+91 90098 88333</p>
               </div>
             </div>
 
@@ -234,7 +233,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Email</h3>
-                <p className="opacity-70">hello@eduinnovate.com</p>
+                <p className="opacity-70">info@MPencil.com</p>
               </div>
             </div>
           </div>
@@ -243,10 +242,17 @@ const Contact = () => {
           <div className="card bg-base-200 shadow-xl">
             <div className="card-body">
               <h3 className="card-title">Visit Our Office</h3>
-              <div className="bg-gray-300 h-64 rounded-lg flex items-center justify-center">
-                <p className="opacity-70">
-                  Map Integration - Google Maps or similar
-                </p>
+              <div className="rounded-lg overflow-hidden" style={{ height: '310px' }}>
+                <iframe
+                  title="Google Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8210861893267!2d73.93311722472092!3d18.491761632596194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1fff414a8e9%3A0xbb2498b6d4a1ea08!2sSWAPNAPURTI%20APARTMENT%2C%20Swarvihar%2C%20Sasane%20Nagar%2C%20Hadapsar%2C%20Pune%2C%20Maharashtra%20411028!5e0!3m2!1sen!2sin!4v1759740880913!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
           </div>

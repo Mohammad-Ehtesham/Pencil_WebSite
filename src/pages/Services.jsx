@@ -1,27 +1,37 @@
 const Services = () => {
   const services = [
     {
-      title: "Educational Consulting",
+      title: "ERP Implementation & Setup",
       description:
-        "Strategic guidance for digital transformation and curriculum development.",
-      icon: "🎯",
+        "Tailored deployment for your school’s unique structure.",
+      icon: "⚙️",
     },
     {
-      title: "Digital Tools & Platforms",
+      title: "Data Migration",
       description:
-        "Custom LMS solutions, analytics dashboards, and collaboration tools.",
-      icon: "💻",
+        "Smooth transition from existing systems or manual records.",
+      icon: "💾",
     },
     {
-      title: "Teacher Training",
+      title: "Training & Onboarding",
       description:
-        "Professional development programs for modern teaching methodologies.",
-      icon: "👩‍🏫",
+        "Helping staff and teachers adopt the platform with ease.",
+      icon: "🎓",
     },
     {
-      title: "Partnership Programs",
-      description: "Connect with other institutions and industry partners.",
-      icon: "🤝",
+      title: "Custom Integrations",
+      description: "Connecting MPencil with accounting, attendance, or payment systems.",
+      icon: "🔗",
+    },
+    {
+      title: "Ongoing Support & Maintenance",
+      description: "Continuous updates and prompt assistance.",
+      icon: "🛠️",
+    },
+    {
+      title: "Analytics & Insights",
+      description: "Helping management make data-driven decisions.",
+      icon: "📊",
     },
   ];
 
