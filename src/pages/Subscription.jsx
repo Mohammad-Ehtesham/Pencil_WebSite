@@ -7,123 +7,140 @@ const Subscription = () => {
     {
       id: "free",
       name: "Free",
-      price: "$0",
+      price: "₹0",
       period: "forever",
-      description: "Perfect for individual educators and small teams",
+      description: "For schools that want to try before they commit.",
       features: [
-        "Basic digital tools",
-        "Community support",
-        "Up to 5 users",
-        "1GB storage",
-        "Basic analytics",
-      ],
-      cta: "Get Started",
-      popular: false,
-    },
-    {
-      id: "basic",
-      name: "Basic",
-      price: "$29",
-      period: "per month",
-      description: "Ideal for small schools and departments",
-      features: [
-        "All Free features",
-        "Email support",
-        "Up to 25 users",
-        "10GB storage",
-        "Advanced analytics",
-        "Custom branding",
-      ],
-      cta: "Start Trial",
-      popular: false,
-    },
-    {
-      id: "premium",
-      name: "Premium",
-      price: "$79",
-      period: "per month",
-      description: "Comprehensive solution for medium institutions",
-      features: [
-        "All Basic features",
-        "Priority support",
-        "Unlimited users",
-        "100GB storage",
-        "Advanced reporting",
-        "API access",
-        "Training sessions",
-      ],
-      cta: "Start Trial",
-      popular: true,
-    },
-    {
-      id: "enterprise",
-      name: "Enterprise",
-      price: "Custom",
-      period: "tailored",
-      description: "Complete solution for large organizations",
-      features: [
-        "All Premium features",
-        "24/7 dedicated support",
-        "Custom integrations",
-        "Unlimited storage",
-        "SLA guarantee",
-        "Custom training",
-        "On-premise options",
+        "Limited essential ERP features",
+        "Storage of 1GB",
+        "Student & staff management",
+        "Attendance tracking",
+        "Parent communication (limited)",
+        "100 student limit",
+        "Setup & training charged separately",
+        "Custom domain available at extra cost",
       ],
       cta: "Contact Sales",
       popular: false,
     },
+    {
+      id: "core",
+      name: "Core",
+      price: "₹XX",
+      period: "student/month",
+      description: "Best for small & growing schools.",
+      features: [
+        "All Free features",
+        "Storage of 10GB*",
+        "Timetable management",
+        "Fee collection & reporting",
+        "Library & inventory modules",
+        "Custom domain support (included)",
+        "Email + chat support",
+        "1,000 student limit",
+        "3-Months free trial",
+      ],
+      cta: "Contact Sales",
+      popular: true,
+      tag: "Most Popular",
+    },
+    {
+      id: "premium",
+      name: "Premium",
+      price: "₹XX",
+      period: "student/month",
+      description: "Comprehensive solution for medium institutions.",
+      features: [
+        "All Core features",
+        "Storage of 100GB*",
+        "Real-time parent app updates",
+        "Smart analytics dashboard",
+        "Online exam & grading system",
+        "Dedicated account manager",
+        "API access + integration support",
+        "Unlimited students & staff",
+        "Custom AI application at extra cost",
+        "3-Months free trial",
+      ],
+      cta: "Contact Sales",
+      popular: false,
+    },
+    // {
+    //   id: "enterprise",
+    //   name: "Enterprise",
+    //   price: "Custom",
+    //   period: "tailored",
+    //   description: "Complete solution for large organizations",
+    //   features: [
+    //     "All Premium features",
+    //     "24/7 dedicated support",
+    //     "Custom integrations",
+    //     "Unlimited storage",
+    //     "SLA guarantee",
+    //     "Custom training",
+    //     "On-premise options",
+    //   ],
+    //   cta: "Contact Sales",
+    //   popular: false,
+    // },
   ];
 
   const featuresComparison = [
     {
       feature: "Users",
-      free: "Up to 5",
-      basic: "Up to 25",
+      free: "1",
+      core: "Up to 25",
       premium: "Unlimited",
-      enterprise: "Unlimited",
+      // enterprise: "Unlimited",
     },
     {
       feature: "Storage",
       free: "1GB",
-      basic: "10GB",
-      premium: "100GB",
-      enterprise: "Unlimited",
+      core: "10GB (upgradable)",
+      premium: "100GB (upgradable)",
+      // enterprise: "Unlimited",
     },
     {
       feature: "Support",
-      free: "Community",
-      basic: "Email",
+      free: "Email",
+      core: "Email",
       premium: "Priority",
-      enterprise: "24/7 Dedicated",
+      // enterprise: "24/7 Dedicated",
     },
     {
       feature: "Analytics",
       free: "Basic",
-      basic: "Advanced",
+      core: "Advanced",
       premium: "Advanced + Reporting",
-      enterprise: "Custom",
+      // enterprise: "Custom",
     },
     {
       feature: "API Access",
       free: "No",
-      basic: "No",
+      core: "Yes",
       premium: "Yes",
-      enterprise: "Full Access",
+      // enterprise: "Full Access",
     },
     {
       feature: "Training",
       free: "No",
-      basic: "No",
-      premium: "4 sessions/year",
-      enterprise: "Custom",
+      core: "Yes",
+      premium: "Yes",
+      // enterprise: "Custom",
     },
     {
       feature: "SLA",
-      free: "No",
-      basic: "No",
+      free: "Standard",
+      core: "Standard",
       premium: "Standard",
-      enterprise: "Premium",
+      // enterprise: "Premium",
+    },
+    {
+      feature: "AI Integration",
+      free: "No",
+      core: "No",
+      premium: "Yes*",
+      // enterprise: "Premium",
     },
   ];
 
@@ -136,12 +153,12 @@ const Subscription = () => {
         </h1>
         <p className="text-xl opacity-70 max-w-2xl mx-auto">
           Select the perfect plan for your educational institution. All plans
-          include our core features with scalable options.
+          include our basic features with scalable options.
         </p>
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
         {plans.map((plan) => (
           <div
             key={plan.id}
@@ -183,41 +200,51 @@ const Subscription = () => {
                 ))}
               </ul>
 
-              <button
-                className={`btn btn-block ${
-                  plan.popular ? "btn-primary" : "btn-outline"
-                }`}
-                onClick={() => setSelectedPlan(plan.id)}
-              >
-                {plan.cta}
-              </button>
+                    <button
+                      className={`btn btn-block flex flex-col items-center ${
+                        plan.popular ? "btn-primary" : "btn-outline"
+                      }`}
+                      onClick={() => {
+                        if (plan.cta === "Contact Sales") {
+                          // Open WhatsApp
+                          window.open('https://wa.me/919009888333?text=Hello%20MPencil%20Team%2C%20I%20am%20interested%20in%20getting%20a%20quote%20for%20the%20' + encodeURIComponent(plan.name) + ' plan. Please contact me with details.', '_blank');
+                          // Open Email
+                          window.open('mailto:info@MPencil.com?subject=Quote%20Request%20for%20' + encodeURIComponent(plan.name) + '&body=Hello%20MPencil%20Team%2C%0A%0AI%20am%20interested%20in%20getting%20a%20quote%20for%20the%20' + encodeURIComponent(plan.name) + '%20plan.%20Please%20contact%20me%20with%20details.%0A%0AThank%20you!','_blank');
+                        } else {
+                          setSelectedPlan(plan.id);
+                        }
+                      }}
+                    >
+                      {plan.cta}
+                    </button>
             </div>
           </div>
         ))}
       </div>
+  <div className="text-center mb-10">
+    <span className="inline-block bg-primary/10 text-primary font-semibold rounded-full px-4 py-2 text-lg">Get Quote</span>
+  </div>
 
       {/* Features Comparison */}
       <div className="mb-20">
         <h2 className="text-3xl font-bold text-center mb-12">Compare Plans</h2>
-        <div className="overflow-x-auto">
-          <table className="table table-zebra w-full">
+        <div className="overflow-x-auto flex justify-center">
+          <table className="table table-zebra min-w-[600px] max-w-full mx-auto">
             <thead>
               <tr>
-                <th>Feature</th>
-                <th>Free</th>
-                <th>Basic</th>
-                <th>Premium</th>
-                <th>Enterprise</th>
+                <th className="text-left w-1/4">Feature</th>
+                <th className="text-left w-1/4">Free</th>
+                <th className="text-left w-1/4">Core</th>
+                <th className="text-left w-1/4">Premium</th>
               </tr>
             </thead>
             <tbody>
               {featuresComparison.map((row, index) => (
                 <tr key={index}>
-                  <td className="font-semibold">{row.feature}</td>
-                  <td>{row.free}</td>
-                  <td>{row.basic}</td>
-                  <td>{row.premium}</td>
-                  <td>{row.enterprise}</td>
+                  <td className="font-semibold text-left w-1/4">{row.feature}</td>
+                  <td className="text-left w-1/4">{row.free}</td>
+                  <td className="text-left w-1/4">{row.core}</td>
+                  <td className="text-left w-1/4">{row.premium}</td>
                 </tr>
               ))}
             </tbody>
@@ -227,16 +254,31 @@ const Subscription = () => {
 
       {/* CTA Section */}
       <div className="text-center bg-base-200 rounded-3xl p-12">
-        <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
-        <p className="text-xl opacity-70 mb-8 max-w-2xl mx-auto">
-          Join thousands of educational institutions transforming their learning
-          environments with EduInnovate.
+        <p className="text-xl opacity-80 mb-8 max-w-2xl mx-auto">
+          To start your free trial or schedule a demo, contact us via WhatsApp or Email.
         </p>
-        <div className="flex gap-4 justify-center flex-wrap">
-          <button className="btn btn-primary btn-lg">
-            Start Your Free Trial
-          </button>
-          <button className="btn btn-outline btn-lg">Schedule a Demo</button>
+        <div className="flex gap-4 justify-center flex-wrap mt-4">
+          {/* Email Button */}
+          <a
+            href="mailto:info@MPencil.com?subject=Inquiry%20from%20Website&body=Hello%20MPencil%20Team%2C%0A%0AI%20am%20interested%20in%20learning%20more%20about%20your%20plans.%20Please%20contact%20me%20with%20details.%0A%0AThank%20you!"
+            className="btn btn-info btn-lg text-white flex items-center gap-2"
+            style={{ backgroundColor: '#3b82f6', borderColor: '#3b82f6' }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+            Contact via Email
+          </a>
+          {/* WhatsApp Button */}
+          <a
+            href="https://wa.me/919009888333?text=Hello%20MPencil%20Team%2C%20I%20am%20interested%20in%20learning%20more%20about%20your%20plans.%20Please%20contact%20me%20with%20details."
+            className="btn btn-success btn-lg flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 32 32"><path fill="#fff" d="M16 3C9.373 3 4 8.373 4 15c0 2.646.86 5.1 2.33 7.13L4.06 29.25a1 1 0 001.19 1.19l7.12-2.27A12.94 12.94 0 0016 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.77 0-3.45-.36-5-1.03l-.36-.15-5.04 1.6 1.62-4.98-.18-.37A9.96 9.96 0 016 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.29-7.71l-2.54-.73a1 1 0 00-.96.26l-.54.55a7.03 7.03 0 01-3.29-3.29l.55-.54a1 1 0 00.26-.96l-.73-2.54A1 1 0 0013.36 9h-2.1A1.25 1.25 0 0010 10.25c0 5.385 4.365 9.75 9.75 9.75A1.25 1.25 0 0021 18.74v-2.1a1 1 0 00-.71-.95z"/></svg>
+            Contact via WhatsApp
+          </a>
         </div>
       </div>
     </div>

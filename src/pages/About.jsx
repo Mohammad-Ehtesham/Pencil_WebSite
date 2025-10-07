@@ -2,37 +2,31 @@ const About = () => {
   const team = [
     {
       name: "Mayank Gupta",
-      role: "CEO & Founder",
-      bio: "Former university dean with 15+ years in educational leadership.",
+      role: "Founder & CEO",
+      bio: "Over 6 years of distinguished experience in IT, leading complex projects as a Full Stack Developer and AIML Specialist. Renowned for driving innovation, architecting scalable solutions and delivering transformative results across the tech landscape.",
       image: "👨‍💻",
     },
     {
-      name: "John Doe",
-      role: "COO",
-      bio: "EdTech expert with background in scalable learning platforms.",
-      image: "👨‍💻",
-    },
-    {
-      name: "Dr. Emily Watson",
-      role: "Head of Learning",
-      bio: "Curriculum development specialist and educational researcher.",
-      image: "👩‍🏫",
+      name: "Mohammed Danish",
+      role: "Strategic Advisor",
+      bio: "A visionary Strategic Advisor with 4.5 years of expertise in IT, Cloud DevOps and AI/ML. Instrumental in shaping the startup’s direction, leveraging deep technical knowledge and strategic insight to drive innovation, operational excellence and rapid business growth.",
+      image: "♟️",
     },
     {
       name: "Aman Verma",
-      role: "Partnership Director",
-      bio: "Former school district administrator with extensive network.",
+      role: "Sales Regional Manager",
+      bio: "Over 6 years of proven excellence in sales and marketing, driving region and consistently exceeding targets across diverse markets.",
       image: "🤝",
     },
   ];
 
-  const milestones = [
-    { year: "2020", event: "Founded with vision to transform education" },
-    { year: "2021", event: "Launched first digital learning platform" },
-    { year: "2022", event: "Partnered with 50+ educational institutions" },
-    { year: "2023", event: "Expanded to international markets" },
-    { year: "2024", event: "Serving 100,000+ students worldwide" },
-  ];
+  // const milestones = [
+  //   { year: "2020", event: "Founded with vision to transform education" },
+  //   { year: "2021", event: "Launched first digital learning platform" },
+  //   { year: "2022", event: "Partnered with 50+ educational institutions" },
+  //   { year: "2023", event: "Expanded to international markets" },
+  //   { year: "2024", event: "Serving 100,000+ students worldwide" },
+  // ];
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -114,7 +108,7 @@ const About = () => {
       {/* Team Section */}
       <section>
         <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {team.map((member, index) => (
             <div key={index} className="card bg-base-200 shadow-xl">
               <div className="card-body items-center text-center">
@@ -134,19 +128,19 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              title: "Innovation",
+              title: "Simplicity in Innovation",
               description:
-                "We constantly explore new ways to enhance learning experiences through technology and research.",
+                "We build technology that’s powerful yet easy to use, ensuring schools can adopt digital tools without complexity.",
             },
             {
-              title: "Collaboration",
+              title: "Empowering Education",
               description:
-                "We believe in the power of partnerships and work closely with educators, institutions, and students.",
+                "Every feature we create aims to free educators from administrative burdens so they can focus on student growth.",
             },
             {
-              title: "Impact",
+              title: "Integrity in Service",
               description:
-                "We measure our success by the positive changes we help create in educational outcomes.",
+                "We believe in honest, reliable support and transparent solutions that schools can truly trust.",
             },
           ].map((value, index) => (
             <div key={index} className="text-center">

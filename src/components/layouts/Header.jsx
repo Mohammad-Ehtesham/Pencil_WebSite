@@ -89,12 +89,31 @@ const Header = () => {
         {/* Right side - Actions */}
         <div className="navbar-end gap-8 hidden lg:flex">
           <div className="flex items-center gap-2">
-            <Link
-              to="/subscription"
-              className="btn btn-primary btn-sm sm:btn-md"
-            >
-              Book a Demo
-            </Link>
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="btn btn-primary btn-sm sm:btn-md cursor-pointer">
+                Book a Demo
+              </label>
+              <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                <li>
+                  <a
+                    href="mailto:info@MPencil.com?subject=Demo%20Request&body=Hello%20MPencil%20Team%2C%0A%0AI%20would%20like%20to%20book%20a%20demo%20of%20your%20platform.%20Please%20contact%20me%20with%20details.%0A%0AThank%20you!"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Book via Email
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/919009888333?text=Hello%20MPencil%20Team%2C%20I%20would%20like%20to%20book%20a%20demo%20of%20your%20platform.%20Please%20contact%20me%20with%20details."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Book via WhatsApp
+                  </a>
+                </li>
+              </ul>
+            </div>
             <ThemeSwitcher />
           </div>
         </div>

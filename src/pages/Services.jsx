@@ -3,35 +3,35 @@ const Services = () => {
     {
       title: "ERP Implementation & Setup",
       description:
-        "Tailored deployment for your school’s unique structure.",
+        "Seamless setup customized to your school’s structure, ensuring MPencil runs perfectly from day one.",
       icon: "⚙️",
     },
     {
       title: "Data Migration",
       description:
-        "Smooth transition from existing systems or manual records.",
+        "We safely transfer your existing student, staff, and fee data into MPencil with zero disruption.",
       icon: "💾",
     },
     {
       title: "Training & Onboarding",
       description:
-        "Helping staff and teachers adopt the platform with ease.",
+        "Hands-on training sessions to help teachers and staff easily adapt and get the most out of MPencil.",
       icon: "🎓",
     },
     {
       title: "Custom Integrations",
-      description: "Connecting MPencil with accounting, attendance, or payment systems.",
+      description: "Connect MPencil with your preferred tools: accounting, SMS, or payments, for a unified experience.",
       icon: "🔗",
     },
     {
       title: "Ongoing Support & Maintenance",
-      description: "Continuous updates and prompt assistance.",
-      icon: "🛠️",
+      description: "Reliable support, regular updates and system monitoring to keep your ERP running flawlessly.",
+  icon: "🧰",
     },
     {
       title: "Analytics & Insights",
-      description: "Helping management make data-driven decisions.",
-      icon: "📊",
+      description: "Turn daily school operations into powerful insights that drive smarter decisions.",
+  icon: "�",
     },
   ];
 
@@ -47,12 +47,14 @@ const Services = () => {
 
       <div className="grid md:grid-cols-2 gap-8">
         {services.map((service, index) => (
-          <div key={index} className="card bg-base-200 shadow-xl">
+          <div
+            key={index}
+            className="card bg-base-200 shadow-xl transition-transform duration-300 ease-in-out hover:scale-105 hover:z-10"
+          >
             <div className="card-body">
               <div className="text-4xl mb-4">{service.icon}</div>
               <h3 className="card-title text-2xl mb-4">{service.title}</h3>
-              <p className="opacity-70 mb-6">{service.description}</p>
-              <button className="btn btn-primary self-start">Learn More</button>
+              <p className="opacity-70">{service.description}</p>
             </div>
           </div>
         ))}
